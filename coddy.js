@@ -324,7 +324,7 @@ const sumRange = (start, end) => {
 console.log(sumRange(num1, num2));
 console.log(sumRange(1, 10));
 */
-
+/*
 const findMax = (num1, num2, num3) => {
     let maxNum = num1;
     if (num2 > maxNum) {
@@ -341,3 +341,13 @@ console.log(findMax(3, 3, 3));
 console.log(findMax(3, 5, 3));
 console.log(findMax(1, 0, 0));
 console.log(findMax(1, 2, 0));
+*/
+
+const calculateVolume = (length, width, height) => {
+    return length * width * height;
+}
+
+console.log(calculateVolume(3, 4, 5));
+console.log(calculateVolume(2, 2, 2));
+console.log(calculateVolume(1, 4, 2));
+console.log(calculateVolume(9, 8, 7));
