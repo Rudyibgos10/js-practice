@@ -343,6 +343,7 @@ console.log(findMax(1, 0, 0));
 console.log(findMax(1, 2, 0));
 */
 
+/*
 const calculateVolume = (length, width, height) => {
     return length * width * height;
 }
@@ -351,3 +352,88 @@ console.log(calculateVolume(3, 4, 5));
 console.log(calculateVolume(2, 2, 2));
 console.log(calculateVolume(1, 4, 2));
 console.log(calculateVolume(9, 8, 7));
+
+*/
+
+/*
+const sumOfEvens = (n) => {
+    let result = 0;
+    if (n < 0) {
+        return `The parameter should be positive integers`;
+    }
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+            result += i;
+        }
+    }
+    return result;
+}
+
+// console.log(sumOfEvents(-1));
+// console.log(sumOfEvents(1));
+// console.log(sumOfEvents(12));
+
+console.log(sumOfEvens(5));
+console.log(sumOfEvens(22));
+console.log(sumOfEvens(9));
+console.log(sumOfEvens(1));
+console.log(sumOfEvens(99));
+*/
+
+
+/*
+const reverseWord = (word) => {
+    let reversedWord = '';
+    for (let i = word.length - 1; i >= 0; i--) {
+        reversedWord += word[i];
+    }
+    return reversedWord;
+};
+
+console.log(reverseWord('khan'));
+*/
+
+/*
+let num = 3626; // Don't change this line
+
+// Type your code below
+console.log("Welcome to FizzBuzz!");
+const fizzbuzz = (int) => {
+    if ((int % 3 === 0) && (int % 7 ===0)) {
+        return "FizzBuzz";
+    } else if (int % 3 === 0) {
+        return "Fizz";
+    } else if (int % 7 === 0) {
+        return "Buzz";
+    } else {
+        return int;
+    }
+}
+console.log(fizzbuzz(num));
+
+*/
+
+let num = 5; // Don't change this line
+
+// Type your code below
+console.log("Welcome to FizzBuzz!");
+const fizzbuzz = (int) => {
+    for (let i = 1; i <= int; i++) {
+        
+        
+        if ((int % 3 === 0) && (int % 7 ===0)) {
+            return "FizzBuzz";
+        } else if (int % 3 === 0) {
+            return "Fizz";
+        } else if (int % 7 === 0) {
+            return "Buzz";
+        } else {
+            return int;
+        }
+        
+        int += i;
+    }
+        
+    return int;
+}
+console.log(fizzbuzz(num));
